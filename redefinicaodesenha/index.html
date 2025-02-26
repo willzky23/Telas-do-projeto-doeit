@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Redefinir senha  </title>
+</head>
+<body>
+    <div class="container">
+        <!-- Bloco verde -->
+        <div class="container-green">
+            <div class="icon">
+                <img class="maoo" src="Password.svg" alt="Ícone de cadeado">
+            </div>
+            
+            <p id="carousel-text" class="quote">
+                “No <span class="highlight">Doeit</span>, cada doação é um ato de amor que pode transformar vidas.”
+            </p>
+            
+        
+            <!-- Indicadores -->
+            <div class="carousel-indicators"></div>
+        </div>
+        
+        <script src="script.js"></script>
+        
+
+        <!-- Bloco de login -->
+        <div class="container-white">
+            <img class="logo" src="2.svg" alt="Doeit">
+            <h2>Redefinir Senha</h2>
+            <form>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Insira seu e-mail">
+                
+                <label for="password" class="password">Senha</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Insira sua senha">
+                    <span class="toggle-password" onclick="togglePassword('password')">
+                        <img class="olho" src="olho.svg" alt="Mostrar senha">
+                    </span>
+                </div>
+        
+                <label for="password_confirmation">Confirmação de Senha</label>
+                <div class="password-container">
+                    <input type="password" id="password_confirmation" placeholder="Confirme sua nova senha">
+                    <span class="toggle-password" onclick="togglePassword('password_confirmation')">
+                        <img src="olho.svg" alt="Mostrar senha">
+                    </span>
+                </div>
+        
+                <p class="sevc">Se você não nos forneceu um endereço de e-mail real ao criar sua conta, não poderemos lhe enviar um e-mail de recuperação.</p>
+        
+                <button type="submit" class="btn">Redefinir</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
