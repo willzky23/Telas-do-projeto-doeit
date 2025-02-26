@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Bloco verde -->
+        <div class="container-green">
+            <div class="icon">
+                <img class="maoo" src="mao.svg" alt="Ícone de doação">
+            </div>
+            <p id="carousel-text" class="quote">
+                “No <span class="highlight">Doeit</span>, cada doação é um ato de amor que pode transformar vidas.”
+            </p>
+            <p class="subtext">Junte-se a nós e faça a diferença!</p>
+        
+            <!-- Indicadores -->
+            <div class="carousel-indicators"></div>
+        </div>
+        
+        <script src="script.js"></script>
+        
+
+        <!-- Bloco de login -->
+        <div class="container-white">
+            <img class="logo" src="2.svg" alt="Doeit"> <!-- Substitua pela sua logo -->
+            <h2>Bem Vindo de volta!</h2>
+            <form>
+                <label class="email" for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Insira seu e-mail">
+                
+                <label class="password" for="password">Senha</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Insira sua senha">
+                    <span class="toggle-password"></span>
+                    <img src="olho.svg" alt="olho" class="olho" onclick="togglePassword('password')">
+                </div>
+
+                <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+
+                <button type="submit" class="btn">Entrar</button>
+
+                <p class="signup-text">Ainda não tem uma conta? <a href="#">Cadastre-se</a></p>
+
+                <button class="google-login">
+                    <img class="googlee" src="icons8-google.svg" alt="Google"> <!-- Substitua pela logo do Google -->
+                </button>
+            </form>
+        
+        </div>
+    </div>
+</body>
+</html>

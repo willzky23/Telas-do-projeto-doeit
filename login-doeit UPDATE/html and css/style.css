@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+.container {
+    position: fixed;
+    top: -12.8%;
+    left: 13.7%;
+    width: 75%;
+    height: 100%;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end; /* Mantém os elementos organizados */
+    align-items: center;
+    padding-right: 30px;
+    margin-top: 150px;
+}
+
+.container-green {
+    position: relative;
+    left: -15.6%; /* Move o verde para fora do branco */
+    top: 44%; /* Mantém o verde fixo */
+    transform: translateY(-42%); /* Garante o alinhamento vertical correto */
+    background-color: #5FCB69;
+    width: 54.2%;
+    height: 97%; /* Mantém o tamanho do verde fixo */
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.icon img {
+    position: fixed;
+    left: 26.2%;
+    top: 11.2%;
+    width: 270px;
+}
+
+
+.highlight {
+    color: #d1e7d6;
+}
+
+.subtext {
+    position: fixed;
+    top: 57%;
+    font-size: 12px;
+}
+
+
+
+/* Estilização do bloco branco */
+.container-white {
+    width: 50%;
+    margin-top: -5px;
+    margin-left: -160px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: relative;
+    left: 3%;
+    width: 86px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    position: relative;
+    left: 2.8%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+form {
+    width: 100%;
+    max-width: 350px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 400px;
+    padding-right: 35px;
+    background-color: #ECECEC;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input {
+    background-color: #ECECEC;
+    width: 400px;
+    height: 45px;
+    border: none;
+    outline: none;
+
+}
+
+.forgot-password {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 15px;
+    color: gray;
+    text-decoration: none;
+    margin-right: -40px;
+}
+
+.email{
+    font-size: 12px;
+}
+
+.password{
+    font-size: 12px;
+}
+
+.btn {
+    width: 120px;
+    height: 38px;
+    padding: 10px;
+    margin-left: 135px;
+    background-color: #5FCB69;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+
+.signup-text a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.olho{
+    position: fixed;
+    top: 58.7%;
+    left: 80.7%;
+}
+
+.google-login {
+    display: inline-block; /* Para que o link envolva apenas a imagem */
+    background: none; /* Remove qualquer fundo */
+    border: none;
+    padding: 0; /* Remove qualquer espaçamento extra */
+    margin-left: 186px;
+    margin-top: 10px;
+}
+
+.google-login img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+#carousel-text {
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+}
+
+/* Estiliza os indicadores (bolinhas) */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-indicators .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb; /* Cinza claro */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carousel-indicators .dot.active {
+    background-color: white; /* Destaca a bolinha ativa */
+    width: 12px;
+    height: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+
+    body {
+        overflow-y: hidden;
+    }
+
+    .container-green {
+        width: 100%;
+        padding: 30px;
+        flex-direction: column;
+    }
+    .container-white {
+        width: 100%;
+        padding: 30px;
+    }
+
+    #carousel-text {
+        font-size: 16px;
+        margin-left: 90px;
+    }
+
+    .maoo {
+        margin-left: 90px;
+    }
+
+    .subtext {
+        margin-left: 90px;
+    }
+
+    .carousel-indicators {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+        
+    }
+    .container {
+        padding: 20px;
+    }
+    .container-green {
+        display: none;
+    }
+    .container-white {
+        margin-right: 50px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+
+    form {
+        margin-left: 50px;
+    }
+
+    #carousel-text {
+        margin-left: 190px;
+    }
+
+    .maoo {
+        margin-left: 190px;
+    }
+
+    .subtext {
+        margin-left: 190px;
+    }
+
+    .carousel-indicators{
+        margin-left: 160px;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    .password-container input {
+        width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    .container-green {
+        display: none;
+    }
+    .btn {
+        font-size: 12px;
+        height: 35px;
+    }
+
+   
+ 
+}
